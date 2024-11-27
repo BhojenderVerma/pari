@@ -1,19 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Priyanka - You're Amazing!</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet"/>
 </head>
 <body>
-  <div class="container">
-    <h1>Hey Priyanka! 🌟</h1>
-    <p class="message">You are truly <span class="highlight">amazing</span> 🌸</p>
-    <div id="heart"></div>
-    <button onclick="showCompliment()">click here ..</button>
-    <p id="compliment" class="hidden"></p>
-  </div>
-  <script src="script.js"></script>
+    <header>
+        <nav>
+            <div class="left">Bhojender's portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="https://github.com/BhojenderVerma">Github</a></li>
+                    <li><a href="www.linkedin.com/in/bhojenderverma">Linkedin</a></li>
+                    <li><a href="https://x.com/Bhojender07">X</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="firstSection">
+                <div class="leftSection">
+                    Hi, My name is <span class="purple">Bhojender</span> 
+                    <div> And I'm a Passionate</div>
+                    <span id="element"></span>
+                </div>
+                <div class="rightSection">
+                    <img src="bg.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- <hr> -->
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Bhojender"s Developer Portfolio</h3>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+     <!-- Setup and start animation! -->
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Data Engineer'],
+      typeSpeed: 50,
+    });
+  </script>
 </body>
 </html>
